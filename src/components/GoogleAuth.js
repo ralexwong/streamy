@@ -69,7 +69,7 @@ class GoogleAuth extends Component {
 }
 
 const mapStateToProps = (state) => {
-    return { isSignedIn: state.authReducer.isSignedIn };
+    return { isSignedIn: state.auth.isSignedIn };
 }
 
 export default connect(mapStateToProps, { signIn, signOut })(GoogleAuth);
