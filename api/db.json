@@ -4,6 +4,11 @@
       "title": "my stream",
       "description": "streamy stream",
       "id": 1
+    },
+    {
+      "title": "stream sequel",
+      "description": "poopoo peepepe",
+      "id": 2
     }
   ]
 }
