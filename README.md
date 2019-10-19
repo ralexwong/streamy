@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Twitch.tv replica
 
-## Available Scripts
+This app was built because I enjoy watching streams on [Twitch](https://twitch.tv). Utilizes CRUD with react/redux to pass data through components and the server. Requires OBS downloaded to stream through this app.
 
-In the project directory, you can run:
+## How to get set up
 
-### `npm start`
+<ul>
+    <li>clone the repo</li>
+    <li>npm install in the main folder, 'api', and 'rtmpserver'</li>
+    <li>Go to the [OBS website](https://obsproject.com/download) and download the installer for your OS</li>
+    <li>Once you get through the installation you should see something simlar to this image</li>
+</ul>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Image](./src/images/initialOBS.png "initialOBS")
+<ul>
+    <li>click on the '+' in the Scenes box and enter any scene name</li>
+    <li>click on the '+' in the Audio box and click on the audio device you will be using to capture for your stream</li>
+</ul>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![Image](./src/images/addscrene.png "addScene")
+![Image](./src/images/addaudio.png "addAudio") 
 
-### `npm test`
+<ul>
+    <li>click on settings on the bottom left of the screen and click on the stream box on the left</li>
+    <li>select a custom service and type out the exact same input thats in the 'Server' input</li>
+    <li>the 'Stream Key' will be whatever stream id that is generated when you created a stream. It will be found in the URL</li>
+    <li>Click the 'Start Streaming' button on the bottom left and you will be ready to go!</li>
+</ul>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Image](./src/images/serversetup.png)
 
-### `npm run build`
+## Roadmap
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Work needs to be done on the styling of the app. Also on backend security so anyone can stream on anyones stream as long as they have the ID
